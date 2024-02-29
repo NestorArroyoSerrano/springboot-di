@@ -3,8 +3,10 @@ package com.nestor.springboot.di.app.springbootdi.repositories;
 import java.util.Arrays;
 import java.util.List;
 
-import com.nestor.springboot.di.app.springbootdi.models.Product;
+import org.springframework.stereotype.Component;
 
+import com.nestor.springboot.di.app.springbootdi.models.Product;
+@Component
 public class ProductRepositoryImpl implements ProductoRepository {
 
     List<Product> data;
