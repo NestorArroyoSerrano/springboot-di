@@ -15,7 +15,7 @@ import com.nestor.springboot.di.app.springbootdi.services.ProductService;
 @RequestMapping("/api")
 public class SomeController {
 
-    private ProductService service = new ProductService();
+    private ProductService service = new ProductService(); //Lo pasamos al propio método para hacerlo inmutable ante cada request
 
     @GetMapping
     public List<Product> list() {
