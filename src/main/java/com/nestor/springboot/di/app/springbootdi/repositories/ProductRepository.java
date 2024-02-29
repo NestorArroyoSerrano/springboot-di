@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.nestor.springboot.di.app.springbootdi.models.Product;
 
-public interface ProductoRepository {
+public interface ProductRepository {
   
     List<Product> findAll();
 
