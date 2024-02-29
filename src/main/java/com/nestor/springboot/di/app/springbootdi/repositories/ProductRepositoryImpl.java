@@ -5,11 +5,11 @@ import java.util.List;
 
 import com.nestor.springboot.di.app.springbootdi.models.Product;
 
-public class ProductRepository {
+public class ProductRepositoryImpl implements ProductoRepository {
 
     List<Product> data;
 
-    public ProductRepository() {
+    public ProductRepositoryImpl() {
         this.data = Arrays.asList(
             new Product(1L, "Memoria corsair 32", 300L),
             new Product(2L, "Cpu Intel Core i9", 850L), 
@@ -17,6 +17,7 @@ public class ProductRepository {
             new Product(4L, "Motherboard Gigabyte", 490L));
     }
     
+    @Override
     public List <Product> findAll() {
         return data;
     }

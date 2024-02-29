@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.nestor.springboot.di.app.springbootdi.models.Product;
-import com.nestor.springboot.di.app.springbootdi.services.ProductService;
+import com.nestor.springboot.di.app.springbootdi.services.ProductServiceImpl;
 
 
 @RestController
 @RequestMapping("/api")
 public class SomeController {
 
-    private ProductService service = new ProductService(); //Lo pasamos al propio método para hacerlo inmutable ante cada request
+    private ProductServiceImpl service = new ProductServiceImpl(); //Lo pasamos al propio método para hacerlo inmutable ante cada request
 
     @GetMapping
     public List<Product> list() {
