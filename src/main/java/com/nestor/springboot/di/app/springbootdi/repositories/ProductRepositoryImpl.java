@@ -3,13 +3,13 @@ package com.nestor.springboot.di.app.springbootdi.repositories;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.nestor.springboot.di.app.springbootdi.models.Product;
-@Component
+@Repository
 public class ProductRepositoryImpl implements ProductoRepository {
 
-    List<Product> data;
+    private List<Product> data;
 
     public ProductRepositoryImpl() {
         this.data = Arrays.asList(

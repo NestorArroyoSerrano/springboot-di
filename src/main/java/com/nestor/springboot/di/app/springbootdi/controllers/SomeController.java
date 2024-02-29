@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.nestor.springboot.di.app.springbootdi.models.Product;
-import com.nestor.springboot.di.app.springbootdi.services.ProductServiceImpl;
+import com.nestor.springboot.di.app.springbootdi.services.ProductService;
 
 
 @RestController
@@ -17,7 +17,7 @@ import com.nestor.springboot.di.app.springbootdi.services.ProductServiceImpl;
 public class SomeController {
 
     @Autowired
-    private ProductServiceImpl service; //Lo pasamos al propio método para hacerlo inmutable ante cada request
+    private ProductService service; //Lo pasamos al propio método para hacerlo inmutable ante cada request
 
     @GetMapping
     public List<Product> list() {
