@@ -22,7 +22,7 @@ public class ProductServiceImpl implements ProductService{
     private ProductRepository repository;
 
     
-    public ProductServiceImpl(@Qualifier("productList") ProductRepository repository/*, Environment environment*/) {
+    public ProductServiceImpl(@Qualifier("productJson") ProductRepository repository/*, Environment environment*/) {
         this.repository = repository;
        // this.environment = environment;
     }
